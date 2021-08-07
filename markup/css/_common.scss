@@ -1,0 +1,43 @@
+body{
+    font-family: $base_font;
+    font-size: 14px;
+    font-weight: 400;
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+#wrapper{
+    width: 100%;
+    overflow: hidden;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+img{
+    display:inline-block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+input{
+    display: block;
+    padding: 0;
+}

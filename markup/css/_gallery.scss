@@ -1,0 +1,27 @@
+.gallery{
+    padding-top: 33px;
+
+    @media (min-width:768px) {
+        padding-top: 354px;
+    }
+
+    @media (min-width:992px) {
+        padding-top: 33px;
+    }
+
+
+    &-wrap{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item{
+        width: 50%;
+
+        @media (min-width:768px) {
+            width: 25%;    
+        }
+    
+    }
+
+}

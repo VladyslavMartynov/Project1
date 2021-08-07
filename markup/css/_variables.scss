@@ -1,0 +1,49 @@
+//font-face
+$base_font: 'Open Sans', sans-serif;
+$add_font:'freestyle_scriptregular';
+
+//box shadow
+$box-shadow_rgba:rgba(0,0,0,0.15);
+
+$box-shadow_head: 3px 0 7px $box-shadow_rgba;
+$box-shadow_btn: 3px 0 5px $box-shadow_rgba;
+$box-shadow_form: 8px 0 10px $box-shadow_rgba;
+
+//links
+$link_col:#959595;
+$link_hov:#5363db;
+
+//colors
+$black:black;
+$basic_bg:#ffffff;
+$white_bg:rgb(255, 255, 255);
+$white_bg2:#f2f2f2;
+$select_col:#bebebe;
+
+//display
+$bl:block;
+$in:inline;
+$in_bl:inline-block;
+$fl:flex;
+$no:none;
+
+//position
+$rel:relative;
+$fix:fixed;
+$abs:absolute;
+$stic:sticky;
+
+//text-align and others
+$upp:uppercase;
+$cent:center;
+$cen:centre;
+$point:pointer;
+$t_:top;
+$sol:solid;
+$trans:transparent;
+$hid:hidden;
+$cov:cover;
+$n_rep:no-repeat;
+
+//images
+

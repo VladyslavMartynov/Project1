@@ -1,0 +1,79 @@
+@media (max-width:600px) {
+    #menu__toggle {
+        opacity: 0;
+    }
+
+    .menu {
+        display: $bl;
+        position: $abs;
+        visibility: $hid;
+        right: 0;
+        top: -300px;
+        width: 100%;
+        margin: 0;
+        padding: 10px 0;
+        list-style: $no;
+        text-align: $cent;
+        background-color: $white_bg;
+        transition-duration: 1s;
+        z-index: -2;
+    
+        &__item {
+        display: $bl;
+        padding: 12px 24px;
+        transition-duration: 1s;
+        }
+    
+        &__btn{
+        display: $fl;
+        align-items: $cent;  
+        position: $abs;
+        top: 42px;
+        right: 14px;
+        @include size(30px,26px);
+        cursor: $point;
+        z-index: 1;
+    
+        & > span,
+        & > span::before,
+        & > span::after {
+            display: $bl;
+            position: $abs;
+            width: 100%;
+            height: 2px;
+            background-color: $link_hov;
+            transition-duration: 1s;
+        }
+    
+        & > span::before {
+            content: '';
+            top: -11px;
+        }
+    
+        & > span::after {
+            content: '';
+            top: 11px;
+        }
+    
+        }
+    }
+    
+    #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+    }
+
+    #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+
+    #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    #menu__toggle:checked ~ .menu {
+        visibility: visible;
+        top: 104px;
+    }
+}
