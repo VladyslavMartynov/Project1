@@ -8,6 +8,7 @@ $box-shadow_rgba:rgba(0,0,0,0.15);
 $box-shadow_head: 3px 0 7px $box-shadow_rgba;
 $box-shadow_btn: 3px 0 5px $box-shadow_rgba;
 $box-shadow_form: 8px 0 10px $box-shadow_rgba;
+$box-shadow_class:0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 
 //links
 $link_col:#959595;
@@ -20,6 +21,9 @@ $white_bg:rgb(255, 255, 255);
 $white_bg2:#f2f2f2;
 $select_col:#bebebe;
 $btn_bg:rgb(91, 108, 235);
+$class_sub:#777777;
+$class_inf:rgb(85,85,85);
+$class_author:rgb(153,153,153);
 
 //display
 $bl:block;
