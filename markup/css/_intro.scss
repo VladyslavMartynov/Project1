@@ -17,7 +17,7 @@
 
         @media (max-width:767px) {
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: $cent;
         }
 
         @media (min-width:768px) {
@@ -33,11 +33,10 @@
         margin-right: 2px;
 
         @media (min-width:768px) {
-            font-size: 18px;
             margin-top: 34px;
         }
     
-        @media (min-width:1400px) {
+        @media (min-width:992px) {
             margin-top: 28px;
         }
 
@@ -48,16 +47,16 @@
     }
 
     &__form{
+        display: $fl;
+        flex-direction: column;
+        align-items: $cent;
         position: $rel;
         font-size: 16.64px;
         font-weight: 600;
         line-height: 18.8px;
-        color: $link_hov;
-        display: $fl;
-        flex-direction: column;
-        align-items: $cent;
         padding: 14px 26px 34px;
         border-radius: 20px;
+        color: $link_hov;
         background-color: $basic_bg;
 
         @media (min-width:768px) {
@@ -94,23 +93,23 @@
         
         @media (min-width:768px) {
             margin-bottom: 12px;
-            align-self: flex-start;
             margin-left: 4px;
+            align-self: flex-start;
             text-transform: $upp;
         }
             
         @media (min-width:1400px) {
             margin-bottom: 10px;
-            align-self: flex-start;
             margin-left: 5px;
+            align-self: flex-start;
             text-transform: unset;
             }
         }
 
     &__item{
         font-size: 14px;
-        line-height: 16.9px;
         font-weight: 400;   
+        line-height: 16.9px;
         padding: 14px 58px 20px 10px;
         border-radius: 10px;
         color: $link_col;
@@ -123,7 +122,7 @@
             padding: 16px 65px 18px 10px;
         }
 
-        @media (min-width:1400px) {
+        @media (min-width:992px) {
             padding: 14px 65px 18px 10px;
         }
 
@@ -150,10 +149,6 @@
         @media (min-width:768px) {
             margin-left: 64px;
             margin-top: 35px;
-        }
-
-        @media (max-width:1400px) {
-            margin-right: 0;
         }
 
         @media (min-width:1400px) {
@@ -185,15 +180,15 @@
     }
 
     &__slogan{
-        margin-top: 31px;
-        margin-left: 3px;
-        text-align: $cent;
         font-family: $base_font;
         font-size: 30px;
-        line-height: 1.5;
         font-weight: 700;
-        color: rgb(255, 255, 255);
+        line-height: 1.5;
+        text-align: $cent;
         text-transform: $upp;
+        margin-top: 31px;
+        margin-left: 3px;
+        color: $white_bg;
 
         @media (max-width:730px) {
             margin-left: 10px;
@@ -202,18 +197,16 @@
         @media (min-width:768px) {
             font-size: 37px;
             line-height: 1.5;
+            text-align: left;
             margin-top: 27px;
             margin-right: 79px;
-            text-align: left;
         }
 
         @media (min-width:992px) {
             font-size: 48px;
             line-height: 1.5;
             text-transform: $upp;
-            margin-top: 21px;
-            margin-right: 0;
-            margin-bottom: 30px;
+            margin: 21px 0 30px;
         }
     }
 
@@ -223,16 +216,16 @@
 
     select{
         font-size: 14px;
-        line-height: 16.9px;
         font-weight: 400;
-        appearance: none;
+        line-height: 16.9px;
         position: $rel;
+        appearance: none;
         margin-top: 15px;
         padding: 18px 111px 18px 18px;
         border-radius: 10px;
         border: none;
-        background-color: $white_bg2;
         color: $link_col;
+        background-color: $white_bg2;
         cursor: $point;
         z-index: 2;
         
@@ -241,9 +234,6 @@
         }
 
         @media (min-width:992px) {
-            font-size: 14px;
-            line-height: 16.9px;
-            font-weight: 400;
             position: $rel;
             margin-top: 15px;
             border-radius: 10px;
@@ -259,14 +249,14 @@
 
     &__select::before{
         content: "";
-        @include size(0,0);
-        border: $sol $select_col;
-        border-width: 0 2px 2px 0;
-        display: in_bl;
         position: $abs;
-        padding: 2px;
+        display: in_bl;
+        @include size(0,0);
         right: 6px;
         top: 38px;
+        border: $sol $select_col;
+        border-width: 0 2px 2px 0;
+        padding: 2px;
         z-index: 3;
         text-align: $cent;
         pointer-events: $no;
@@ -290,14 +280,14 @@
 
         @media (min-width:992px) {
             content: "";
+            position: $abs;
+            font-size: 12px;
             @include size(0,0);
+            right: 9px;
+            top: 40px;
             border-style: $sol;
             border-width: 8px 4.5px 0 4.5px;
             border-color: $link_col transparent;
-            font-size: 12px;
-            position: $abs;
-            right: 9px;
-            top: 40px;
             z-index: 4;
             text-align: $cent;
             pointer-events: $no;
@@ -308,14 +298,14 @@
     &__select::after{
         @media (max-width:768px) {
             content: '';
-            @include size(17px,50px);
-            border-top-right-radius: 5px;
-            border-bottom-right-radius: 5px;
             position: $abs;
-            border: 1px $sol $select_col;
-            background-color: $white_bg2;
+            @include size(17px,50px);
             top: 15px;
             right: 1px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border: 1px $sol $select_col;
+            background-color: $white_bg2;
             z-index: 2;
         }
     }
