@@ -1,8 +1,8 @@
 .header{
     position: $rel;
-    background-color: $basic_bg;
     padding-top: 19px;
     z-index: 5;
+    background-color: $basic_bg;
 
     &::before{
         content: '';
@@ -41,9 +41,9 @@
 
     &__link{
         position: $rel;
+        border-bottom: 1px $sol $trans;
         color:$link_col;
         transition: color 1s,border-bottom 2s;
-        border-bottom: 1px $sol $trans;
         
         &--special{
             color: $link_col;
