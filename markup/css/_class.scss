@@ -69,6 +69,7 @@
     
     &__item {
         display: $fl;
+        flex-direction: column;
         width: 100%;
         max-width: 500px;
         margin-bottom: 15px;
@@ -76,25 +77,33 @@
         box-shadow:$box-shadow_class;
 
     @media (min-width:768px) {
+        flex-direction: row;
         margin-bottom: 20px;
     }
 
     @media (min-width:1000px) {
+        flex-direction: row;
         margin-left: 18px;
     }
 
     @media (min-width:1200px){
-            max-width: 538px;
-            margin-bottom: 25px;
-            margin-left: 35px;
-        }
+        flex-direction: row;
+        max-width: 538px;
+        margin-bottom: 25px;
+        margin-left: 35px;
     }
+}
     
     &__visual {
         position: $rel;
         width: 100%;
-        max-width: 242px;
+        max-width: 100%;
         min-height: 300px;
+
+        @media (min-width:768px) {
+            max-width: 242px;
+            min-height: 300px;
+        }
     
     
     img {
@@ -120,7 +129,7 @@
         font-weight: 700;
         line-height: 22.8px;
         text-transform: $upp;
-        margin-bottom: 31px;
+        margin-bottom: 35px;
     }
     
     &__text {
@@ -132,7 +141,7 @@
 
         @media (min-width:530px) {
             font-size: 14px;
-            margin-bottom: 13px;
+            margin-bottom: 16px;
         }
     }
     
