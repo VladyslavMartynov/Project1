@@ -12,7 +12,7 @@
 
     &__top-inner{
         display: $fl;
-        justify-content: space-between;
+        justify-content: $sp_bet;
         align-items: $cent;
     }
 }
@@ -23,14 +23,12 @@
     line-height: 1.2;
 
     &__item:not(:last-child){
-        margin-right: 26px;
-
         @media (max-width:600px) {
             margin-right: 0;
             margin-bottom: 8px;
         }
 
-        @media (min-width:768px) {
+        @media (min-width:630px) {
             margin-right: 28px;
         }
     
