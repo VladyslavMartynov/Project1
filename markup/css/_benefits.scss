@@ -1,0 +1,196 @@
+// .opportunity{
+//     &-wrap{
+//         position: relative;
+//         background-image: url(../images/bg-02.jpg);
+//         min-height: 799px;
+//         background-repeat: $n_rep;
+//         background-size: $cov;
+//         background-position:$cent $cent;
+//         margin-top: 175px;
+
+//     &::before{
+//         content: '';
+//         background: #5363db;
+//         position: $abs;
+//         top: 0;
+//         left: 0;
+//         opacity: 0.7;
+//         width: 100%;
+//         height: 100%;
+//     }
+// }
+
+//     &__list{
+//         display: $fl;
+//         flex-wrap: wrap;
+//         padding-top: 119px;
+//         z-index: 2;
+//         align-items: flex-start;
+//         position: relative;
+
+//         >li{
+//             display: $fl;
+//             align-items: center;
+//             width: 100%;
+    
+//             @media (min-width:768px){
+//                 width: 50%;
+//             }
+    
+//             @media (min-width:922px){
+//                 width: calc(100%/4);
+//             }
+//         }
+//     }
+// }
+
+// .card{
+//     width: 100%;
+//     // padding: 10px;
+//     border: 1px solid #c5c5c5;
+//     display: $fl;
+//     flex-direction: column;
+//     align-items: $cent;
+//     text-align: $cent;
+//     border-radius: 7% 7% 7% 7%;
+//     cursor: $point;
+//     transition: all 1s;
+
+//     h2{
+//         font-size: 18px;
+//         font-weight: 700;
+//         line-height: 1.5;
+//         color: $white_bg;
+//     }
+
+//     p{
+//         font-size: 16px;
+//         font-weight: 400;
+//         line-height: 1.6;
+//         color: $white_bg;
+//     }
+
+//     &__visual>img{
+//         position: $rel;
+//         cursor: $point;
+//         z-index:1;
+//     }
+// }
+
+.opportunity{
+    &-wrap{
+        position: relative;
+        background-image: url(../images/bg-02.jpg);
+        min-height: 799px;
+        background-repeat: $n_rep;
+        background-size: $cov;
+        background-position:$cent $cent;
+        margin-top: 175px;
+  
+    &::before{
+        content: '';
+        background: #5363db;
+        position: $abs;
+        top: 0;
+        left: 0;
+        opacity: 0.7;
+        width: 100%;
+        height: 100%;
+    }
+  }
+  
+    &__box{
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 2;
+      margin: 0 -10px;
+      padding-top: 152px;
+  
+  
+      >div{
+        // border: 1px solid #c5c5c5;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        display: $fl;
+        width: 100%;
+        padding: 0 10px 10px;
+  
+  
+        // @media (min-width:768px){
+        //     width: 50%;
+        //     // padding: 0 10px 15px;
+        //     }
+  
+        @media (min-width:768px){
+            width: calc(100%/4);
+            padding: 0px 10px 74px;
+            margin-top: -15px;
+        }
+    }
+    }
+  
+  
+    &__item{
+      h2{
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.5;
+        color: white;
+        margin-top: 30px
+      }
+    
+      p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.6;
+        color: white;
+        text-align: center;
+        padding: 0 5px;
+    }
+}    
+
+&__title{
+    margin-bottom: 43px;
+}
+
+
+    &__visual{
+        flex-grow: 1;
+        position: relative;
+        
+
+        
+        // &::before{
+        //   content: "\ea56";
+        //   font-family: 'icomoon';
+        // }
+        &::after{
+            // position: absolute;
+            // content: "\ea56";
+            // font-family: 'icomoon';
+            z-index: 1;
+            top: -13px;
+            left: 117px;
+            position: absolute;
+            content: '';
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: transparent;
+            border: 3px solid white;
+            padding: 30px;
+        }
+    }
+
+
+    &__mod{
+      margin-top: 10px;
+      margin-left: -7px;
+    }
+
+    &__mod2{
+      margin-left: -3px;
+    }
+}

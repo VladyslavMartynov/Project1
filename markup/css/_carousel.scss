@@ -1,0 +1,127 @@
+.info{
+    &-wrap{
+        padding-top: 50px;
+
+        @media (min-width:992px) {
+            padding-top: 148px;    
+        }
+    }
+
+    &__inner{
+        display: $fl;
+        flex-wrap: $wr;
+        justify-content: $cent;
+
+    @media (min-width:768px) {
+        flex-wrap: nowrap;
+        justify-content: $sp_bet;
+    }
+}
+
+    &__text{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #555555;
+
+        P{
+            max-width: 464px;
+
+        @media (min-width:768px) {
+            margin-right: 20px;
+        }
+    }
+}
+
+    &__title{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 1.5;
+        color: $gallery_bg;
+        text-transform: $upp;
+    }
+
+    &__box{
+        margin-top: 27px;
+        position: $rel;
+    }
+}
+
+.visual{
+    padding-top: 52%;
+    position: $rel;
+    overflow: $hid;
+
+    img{
+        position: $abs;
+        top:0;
+        left: 0;
+        width: 100%;
+        max-width: $no;
+        object-fit: $cov;
+    }
+}
+
+.swiper{
+    &-container{
+        width: 250px;
+
+        @media(min-width:448px){
+            width: 400px;
+        }
+
+        @media (min-width:768px) {
+            width: 450px;
+        }
+
+        @media (min-width:1200px) {
+            width: 571px;
+        }
+    }
+
+    &-button-next{
+        &::before{
+            content: '';
+            position: $abs;
+            border-radius: 23px;
+            @include size(48px,48px);
+            background-color: $white_bg;
+            left: 11px;
+            z-index: -1;
+            box-shadow: $box-shadow_carousel;
+            top: -4px;
+        }
+
+        &:after{
+            content: 'next';
+            font-size: 20px;
+            color: $gallery_bg;
+            position: $abs;
+            left: 30px;
+            top: 10px;
+        }
+    }
+
+    &-button-prev{
+        &::before{
+            content: '';
+            position: absolute;
+            @include size(48px,48px);
+            left: -35px;
+            top: -4px;
+            border-radius: 23px;
+            background-color: $white_bg;
+            z-index: -1;
+            box-shadow: $box-shadow_carousel;
+        }
+
+        &:after{
+            content: 'prev';
+            position: $abs;
+            left: -15px;
+            top: 10px;
+            font-size: 20px;
+            color: $gallery_bg;
+        }
+    }
+}
