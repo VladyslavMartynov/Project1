@@ -1,0 +1,146 @@
+.prices{
+    &-wrap{
+        min-height: 702px;
+        background-image: url(../images/bg-03.jpg);
+        background-repeat: $n_rep;
+        background-size: $cov;
+        background-position:$cent $cent;
+    }
+
+    &__inner{
+        padding-top: 100px;
+        display: $fl;
+        justify-content: space-around;
+        flex-wrap: $wr;
+
+        @media (min-width:1200px) {
+            justify-content: $sp_bet;
+        }
+    }
+
+    span{
+        display: $bl;
+    }
+
+    span + span:not(:last-child){
+        margin-top: 41px;
+    }
+
+    &__item{
+        display: $fl;
+        flex-direction: column;
+        background-color: $basic_bg;
+        cursor: $point;
+        box-shadow: 9px 0 50px rgba(0,0,0,.10);
+        margin: 30px;
+
+        @media (min-width:1170px) {
+            margin: 0;
+        }
+    }
+
+    &__num{
+        font-size: 67.35px;
+        line-height: 1.12;
+        text-transform: $upp;
+        position: $rel;
+        color: $basic_bg;
+        font-weight: 600;
+        background-color: #5b6ceb;
+        text-align: $cent;
+        padding: 33px 22px 44px 93px;
+        border-top-left-radius: 10px;
+        border-top-right-radius:  10px;
+
+        &::before{
+            content: '$';
+            position: $abs;
+            font-size: 35px;
+            left: 95px;
+            top: 56px;
+
+            @media (min-width:450px) {
+                left: 101px;
+            }
+        }
+
+        >sub{
+            position: $rel;
+            font-size: 18px;
+            line-height: 1.3;
+            margin-left: 16px;
+
+            &::before{
+                content: '/';
+                position: $abs;
+                font-size: 20px;
+                top: -2px;
+                left: -15px;
+            }
+        }
+    }
+
+    &__date{
+        position: $rel;
+        font-size: 17px;
+        line-height: 1.3;
+        font-weight: 400;
+        color: $class_inf;
+
+        &::after{
+            content: '';
+            position: $abs;
+            width: 100px;
+            border: 1px solid rgb(215, 215, 215);
+            left: 24px;
+            top: 48px;
+
+            @media (min-width:450px) {
+                left: 57px;
+                top: 40px;
+            }
+        }
+    }
+
+    &__help{
+        font-size: 18px;
+        line-height: 1.3;
+        font-weight: 400;
+        color: $class_inf;
+    }
+
+    &__info{
+        display: $fl;
+        flex-direction: column;
+        justify-content: $sp_bet;
+        text-align: $cent;
+        padding: 46px 97px 51px;
+
+        @media (min-width:450px) {
+            text-align: left;
+            padding: 46px 78px 51px 78px;   
+        }
+    }
+
+    &__btn{
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 45px;
+        text-transform: unset;
+        padding: 0px 53px 6px 56px;
+        border-radius: 22px;
+        text-align: $cent;
+        cursor: $point;
+        transition: box-shadow 1s, background-color 1s;
+
+        @media(min-width:450px){
+            align-self: $cent;
+            padding: 16px 50px;
+        }
+
+        &:hover{
+            background-color: $link_hov;
+            box-shadow: $box-shadow_btn;
+        }
+    }
+}
