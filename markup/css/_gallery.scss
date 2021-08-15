@@ -1,13 +1,4 @@
 .gallery{
-    padding-top: 50px;
-    @media (min-width:768px) {
-        padding-top: 100px;
-    }
-
-    @media (min-width:992px) {
-        padding-top: 193px;
-    }
-
     &-wrap{
         display: $fl;
         flex-wrap: $wr;

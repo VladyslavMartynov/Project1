@@ -1,6 +1,6 @@
 .prices{
     &-wrap{
-        min-height: 702px;
+        min-height: 699px;
         background-image: url(../images/bg-03.jpg);
         background-repeat: $n_rep;
         background-size: $cov;
@@ -8,10 +8,14 @@
     }
 
     &__inner{
-        padding-top: 100px;
+        padding-top: 50px;
         display: $fl;
         justify-content: space-around;
         flex-wrap: $wr;
+
+        @media (min-width:768px) {
+            padding-top: 100px;
+        }
 
         @media (min-width:1200px) {
             justify-content: $sp_bet;
