@@ -788,7 +788,7 @@ h6 {
 .content__select::before {
   content: "";
   position: absolute;
-  display: in_bl;
+  display: inline-block;
   width: 0;
   height: 0;
   right: 6px;

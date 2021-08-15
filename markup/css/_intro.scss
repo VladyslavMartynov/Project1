@@ -251,7 +251,7 @@
     &__select::before{
         content: "";
         position: $abs;
-        display: in_bl;
+        display: $in_bl;
         @include size(0,0);
         right: 6px;
         top: 38px;
